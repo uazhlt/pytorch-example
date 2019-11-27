@@ -73,7 +73,6 @@ if __name__ == "__main__":
     LABEL = DataUtils.label_field()
 
     # load data
-    # FIXME: make data_dir a CLI param
     train_ds, dev_ds, test_ds = DataUtils.load_datasets(data_dir=INPUT_DIR, input_field=TEXT, label_field=LABEL)
 
     # tally vocabularies for input and labels
